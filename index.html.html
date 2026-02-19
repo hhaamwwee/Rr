@@ -1,0 +1,99 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>رسائلي الخاصة</title>
+<style>
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #ffc0cb; /* بمبي فاتح */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#login {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#content {
+  display: none;
+  margin-top: 20px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.message-box {
+  background: rgba(255,255,255,0.6);
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 15px;
+  font-size: 18px;
+  color: #800000; /* لون حب دافي */
+  transition: transform 0.3s;
+}
+
+.message-box:hover {
+  transform: scale(1.05);
+}
+
+input, button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  margin: 5px;
+}
+
+button {
+  background-color: #ff69b4;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff1493;
+}
+</style>
+</head>
+<body>
+
+<div id="login">
+  <h2>ادخل كلمة السر</h2>
+  <input type="password" id="password" placeholder="كلمة السر">
+  <button onclick="checkPassword()">دخول</button>
+</div>
+
+<div id="content">
+  <h2> ❤️بحبك يانور عيني </h2>
+
+  <div class="message-box">💘 بصي حصل بينا مشاكل كتيره جدا واتحلت ووصلنا لنقطه تفاهم حلوا مع بعض  وعاوز اقولك ان مفيش علاقه مفهاش مشاكل لاكن بنعدي المشاكل دي علشان نكمل مع الشخص  الي بنحبه وعاوزين نعيش معاه باقي حياتنا  </div>
+  <div class="message-box">بصي انا  بحترمك لدرجه تخليني اكون صريح معاكي انا بحبك لدرجه الله واعلم بيها وعاوزك تكوني مراطي وحلالي  بس خايف مني اقولك الكلام دا   ومقدرش عليه بعدين   لاكن انا نيتي انك تكوني حلالي وبس </div>
+  <div class="message-box">والحركات الي كنت بعملها دي اصلا الي هيا صور البروفايل الي مبتعجبكيش والاستوريهات  الي كنتي ديماا تخشي تعلقيلي عليها   كنت بعمل كل دا عشان الفت انتباهك عشان نتكلم شويه</div>
+  <div class="message-box">  بصي انا بكتب الرسايل دي دلوقتي وانتا متخانقين لو الدنيا بقت تمام بينا في يوم من الايام وبعتلك الموقع دا يبقي نصيبك تشوفيها غير كدا  يبقي ربنا يوفقك وبتمنالك الخير من قلبي وربنا</div>
+  <div class="message-box">بصي انا كل الي جويا مش هعرف اعبر عنو  ودي مشكله الرجاله عموما  بس الي اعرفو اني  بحبك يابسبوسه❤ </div>
+
+</div>
+
+<script>
+const myPassword = "1422008"; // غيّر الرقم ده لكلمة السر اللي تحبها
+
+function checkPassword() {
+  const input = document.getElementById('password').value;
+  if(input === myPassword){
+    document.getElementById('login').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+  } else {
+    alert('كلمة السر غلط');
+  }
+}
+</script>
+
+</body>
+</html>
